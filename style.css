@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --default-font: 'Open sans';
+  --gray: #F4F7FE;
+  --coral: #F97A8B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font);
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray);
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.container {
+  position: relative;
+  width: 450px;
+  margin: 30px 0;
+}
+
+.container .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .text h1 {
+  font-weight: bold;
+  color: royalblue;
+  letter-spacing: 1px;
+  font-size: 32px;
+}
+
+.container .text p {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.container .form-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.container .form-group .input,
+.container .form-group .button {
+  height: 60px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 30px;
+}
+
+.container .form-group .input {
+  width: 70%;
+}
+
+.container .form-group .button {
+  width: 28%;
+  font-weight: bold;
+  background: transparent;
+  overflow: hidden;
+}
+
+.container .form-group .button-blue {
+  background: royalblue;
+  color: #fff;
+}
+
+.container .wrapper-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container .wrapper-container .box {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container .wrapper-container .box .box-content {
+  width: calc(100% - 20%);
+}
+
+.container .wrapper-container .box .box-content p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.container .wrapper-container .box .box-icon {
+  width: calc(100% - 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.container .wrapper-container .box .box-icon i {
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--coral);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  .container .wrapper-container .box .box-content p {
+    font-size: 12px;
+    display: flex;
+  }
+}
