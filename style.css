@@ -1,0 +1,13 @@
+body {
+  background: #f4f7fe;
+}
+.text {
+  font-size: 14px;
+}
+.text.active {
+  text-decoration: line-through;
+}
+.content {
+  position: relative;
+  overflow-y: scroll;
+}
